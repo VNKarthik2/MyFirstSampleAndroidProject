@@ -33,7 +33,18 @@ android {
     buildFeatures {
         viewBinding true
     }
+    flavorDimensions 'app'
+    productFlavors {
+        amazon {
+            dimension 'app'
+            applicationIdSuffix '.amazon'
+        }
+        flipkart {
+            dimension 'app'
+        }
+    }
 }
+
 
 dependencies {
 
